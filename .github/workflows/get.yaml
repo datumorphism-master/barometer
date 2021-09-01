@@ -48,6 +48,6 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          repository: covid19-eu-zh/covid19-eu-data
-          branch: master
+          repository: datumorphism-master/barometer
+          branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}
