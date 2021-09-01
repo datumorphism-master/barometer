@@ -1,0 +1,8 @@
+{
+    "from_countries": [
+        "DE", "AT", "FR", "NL", "CZ", "CH", "PL", "IT", "BE", "ES"
+    ],
+    "to_countries": [
+        "DE", "AT", "FR", "NL", "CZ", "CH", "PL", "IT", "BE", "ES"
+    ]
+}
