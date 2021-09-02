@@ -39,7 +39,7 @@ def process(data, dtypes):
                 row["value"] = k_val
                 monthly_records.append(row)
         l_DATANOW = l["DATANOW"]
-        l_DATE = pd.to_datetime(l["LASTUPDATE"])
+        l_DATE = pd.to_datetime(l["LASTUPDATE"], dayfirst=True)
         l_row = {
             "updated_at": last_update,
             "year": l_DATE.year,
