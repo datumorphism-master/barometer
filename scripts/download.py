@@ -181,8 +181,12 @@ def get_lane(from_country, to_country, api_base=None):
         logger.error(f"status: {result['status']}; could not download data")
     else:
         res = result["content"].json()
-        res["FROM"] = from_country
-        res["TO"] = to_country
+        if not isinstance(res, dict):
+            logger.error(f"Content from request can not be converted to dict: res={res}")
+            res = {}
+        else:
+            res["FROM"] = from_country
+            res["TO"] = to_country
 
         return res
 
